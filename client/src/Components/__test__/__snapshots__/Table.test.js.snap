@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+Array [
+  <div
+    className="search-area"
+    style={
+      Object {
+        "marginTop": "40px",
+      }
+    }
+  >
+    <br />
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "display": "flex",
+          "height": "20vh",
+          "justifyContent": "flex-start",
+          "padding": "0px",
+          "width": "95%",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "margin": "0 50px",
+          }
+        }
+      >
+        <img
+          src="search-icon.svg"
+          style={
+            Object {
+              "borderBottom": "1px solid black",
+              "float": "left",
+            }
+          }
+        />
+        <input
+          className="text-input"
+          onChange={[Function]}
+          placeholder="Search"
+          type="text"
+        />
+      </div>
+      From:
+      <input
+        className="date-input"
+        onChange={[Function]}
+        type="date"
+      />
+      <div
+        style={
+          Object {
+            "margin": "0 50px",
+          }
+        }
+      >
+        To:
+        <input
+          className="date-input"
+          onChange={[Function]}
+          type="date"
+        />
+          
+      </div>
+    </div>
+  </div>,
+  <div
+    className="table-area"
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "display": "flex",
+        "marginTop": "40px",
+        "padding": "50px",
+        "width": "95%",
+      }
+    }
+  >
+    <table
+      className="main-table"
+      data-testid="table"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <thead>
+        <tr>
+          <th>
+            Serial
+          </th>
+          <th>
+            Meeting Name
+          </th>
+          <th>
+            Number of People
+          </th>
+          <th>
+            Date
+          </th>
+          <th>
+            Start Time
+          </th>
+          <th>
+            End Time
+          </th>
+          <th>
+            Action
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td />
+          <td>
+            <input
+              className="text-input"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </td>
+          <td>
+            <input
+              className="text-input"
+              onChange={[Function]}
+              type="text"
+              value=""
+            />
+          </td>
+          <td>
+            <input
+              className="date-input"
+              onChange={[Function]}
+              type="date"
+              value=""
+            />
+          </td>
+          <td>
+            <input
+              className="date-input"
+              onChange={[Function]}
+              type="time"
+            />
+          </td>
+          <td>
+            <input
+              className="date-input"
+              onChange={[Function]}
+              type="time"
+            />
+          </td>
+          <td>
+            <input
+              className="add-button"
+              onClick={[Function]}
+              type="button"
+              value="Add"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+]
+`;
