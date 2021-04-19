@@ -39,8 +39,8 @@ function Table() {
                 setMeetingName("");
                 setNumberPeople("");
                 setDate("");
-                setStartDate("");
-                setEndDate("");
+                setStartTime("");
+                setEndTime("");
             })
              .catch(err=>console.log(err));
     
@@ -127,8 +127,8 @@ function Table() {
                     <td><input className = "text-input" type = "text" value = {MeetingName} onChange = {e => setMeetingName(e.target.value)}/></td>
                     <td><input className = "text-input" type = "text" value = {NumberPeople} onChange = {e => setNumberPeople(e.target.value)}/></td>
                     <td><input className = "date-input" type = "date" value = {Date} onChange = {e => setDate(e.target.value)}/></td>
-                    <td><input className = "date-input" type = "time" value = {StartDate} onChange = {e => setStartTime(e.target.value)}/></td>
-                    <td><input className = "date-input" type = "time" value = {EndDate} onChange = {e => setEndTime(e.target.value)}/></td>
+                    <td><input className = "date-input" type = "time" value = {StartTime} onChange = {e => setStartTime(e.target.value)}/></td>
+                    <td><input className = "date-input" type = "time" value = {EndTime} onChange = {e => setEndTime(e.target.value)}/></td>
                     <td><input className = "text-input" type = "button" className="add-button" value= "Add" onClick= {AddData}/></td>
                 </tr>
                 </tbody>
