@@ -41,5 +41,6 @@
   "devDependencies": {
     "jest-dom": "^4.0.0",
     "react-test-renderer": "^17.0.2"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
