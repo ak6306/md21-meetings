@@ -94,7 +94,7 @@ function Table() {
                 <div style = {{margin :'0 50px'}}>To:<input className= "date-input" type="date" onChange = {e => setEndDate(e.target.value)}/>  </div>
                 </div>
         </div>
-        <div className = 'table-area' style = {{display: 'flex', padding: '50px', backgroundColor: '#fff', marginTop: '40px', width: '95%'}}>
+        <div className = 'table-area' style = {{display: 'flex', padding: '50px', backgroundColor: '#fff', marginTop: '40px', width: '95%', overflowY: 'auto', height: "50vh"}}>
             <table data-testid = "table" className="main-table"  style= {{width: '100%'}}>
                 <thead>
                 <tr>
