@@ -19,7 +19,7 @@ function Table() {
         }, [query, StartDate, EndDate]);
 
     function fetchData(){
-        axios.get('http://localhost:5000/meets/')
+        axios.get('http://meetings2021.herokuapp.com/meets/')
             .then(res=>setData([...res.data]));
     }
     function AddData() {
@@ -34,7 +34,7 @@ function Table() {
         
        // setData([ ...data, ...payload]);
         console.log(payload);
-        axios.post('http://localhost:5000/meets/add', payload)
+        axios.post('http://meetings2021.herokuapp.com/meets/add', payload)
              .then(res=>{console.log(res.data)
                 setMeetingName("");
                 setNumberPeople("");
@@ -47,7 +47,7 @@ function Table() {
 
     }
     function DeleteData(id){
-        axios.delete('http://localhost:5000/meets/'+id)
+        axios.delete('http://meetings2021.herokuapp.com/meets/'+id)
             .then(console.log("Deleted!"));
     }
     function findData(query1){
