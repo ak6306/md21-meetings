@@ -11,9 +11,7 @@ app.use(cors());
 app.use(express.json());
 const proxy = require("http-proxy-middleware");
 
-module.exports = app => {
-  app.use(proxy("/*", { target: "http://localhost:5000/" }));
-};
+
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true});
 const connection = mongoose.connection;
